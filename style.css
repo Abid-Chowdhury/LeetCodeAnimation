@@ -8,8 +8,8 @@
     --blue: #C3E7DC;
     --white: #FFFFFF;
     --primary: #F9F3DD;
-    --lnude: #F5D89F;
     --orange: #FFAB5D;
+    --dblue: #b2d4c9;
 }
 
 body {
@@ -19,12 +19,14 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+
 .top-container {
     position: sticky;
     top: 0;
     z-index: 999;
     background-color: var(--primary);
     height: 120px;
+    border-bottom: solid;
 }
 
 .logo-container {
@@ -65,16 +67,6 @@ body {
     padding: 10px;
 }
 
-
-a {
-    margin: 10px;
-    color: var(--black);
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 750;
-    text-decoration: none;
-}
-
 .paw1 {
     width: 61px;
     height: 65px;
@@ -92,215 +84,97 @@ a {
 }
 
 
-.profile {
-    width: 60px;
-    height: 60px;
-    background-color: var(--coral);
-    border-radius: 50%;
-    border: solid var(--coral) 3px;
-    /* margin-top: 5px; */
-    padding-top: 8px;
-    margin-left: 50px;
-    margin-top: 5px;
-}
-
-.profile img {
-    width: 40px;
-    height: 40px;
-}
-
-.left p {
-    padding-top: 20px;
+.about h1 {
     font-family: Caveat;
-    color: var(--coral);
-    text-align: center;
-    /* padding-bottom: 10px; */
     font-size: 70px;
-    font-weight: 700;
-    margin-bottom: 0;
-}
-
-.left {
-    /* margin-top: 10px; */
-    margin-left: 20px;
-    text-align: center;
-    border-radius: 25px;
-    background: var(--lnude);
-    /* width: 393px; */
-}
-
-.wishlist-input {
-    display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    /* bottom: 20px; */
-    /* height: 60px; */
-    /* margin-bottom: 110px; */
-}
-
-.wishlist-input button {
-    height: 30px;
-    /* width: 20px; */
-    margin-left: 20px;
-    border: none;
-    color: var(--primary);
-    background-color: var(--lnude);
-    padding-top: 8px;
-    font-size: 50px;
-    bottom: 50px;
-}
-
-.wishlist-input button:hover {
-    color: var(--coral);
-}
-
-
-.input-container {
-    position: relative;
-    flex: 1;
-    width: 200px;
-    margin-top: 20px;
-}
-
-.input-container input[type="text"] {
-    font-size: 23px;
-    width: 100%;
-    /* left: -1000px; */
-    border: none;
-    border-bottom: 2px solid var(--primary);
-    color: var(--orange);
-    padding: 5px 0;
-    background-color: transparent;
-    outline: none;
-}
-
-.input-container .label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: var(--primary);
-    transition: all 0.3s ease;
-    pointer-events: none;
-    font-size: 20px;
-}
-
-.input-container input[type="text"]:focus~.label,
-.input-container input[type="text"]:valid~.label {
-    top: -20px;
-    font-size: 16px;
-    color: var(--coral);
-}
-
-.input-container .underline {
-    position: absolute;
-    bottom: 0.5px;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    background-color: var(--coral);
-    transform: scaleX(0);
-    transition: all 0.3s ease;
-}
-
-.input-container input[type="text"]:focus~.underline,
-.input-container input[type="text"]:valid~.underline {
-    transform: scaleX(1);
-}
-
-.mid {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.wishlistname-button,
-.wishlistname-button input {
-    font-family: Caveat;
-    font-size: 60px;
     font-style: normal;
     font-weight: 700;
-    background-color: var(--lnude);
-    border: none;
     color: var(--orange);
     text-align: center;
 }
 
+.about p {
+    font-size: 30px;
+    line-height: 1.4;
+}
 
-.wishlistname-button input {
-    width: 300px;
+.about {
+    width: 1100px;
     text-align: center;
-}
-
-.wishlistname-button button {
-    border: none;
-    background-color: var(--primary);
-    margin-right: 15px;
-
+    padding-left: 200px;
 }
 
 
+.why h2 {
+    font-family: Caveat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--coral);
+    text-align: left;
+    margin-bottom: 20px;
+}
 
+.why li {
+    font-size: 21px;
+    line-height: 1.4;
+}
 
+.why {
+    width: 720px;
+    margin-left: 55px;
+}
 
+p {
+    font-size: 21px;
+    line-height: 1.4;
+}
 
-.edit-button {
-    background-color: var(--primary);
-    border: none;
-    width: 35px;
-    height: 35px;
-    border-radius: 5px;
+.row {
     display: flex;
-
-}
-
-.edit-button img {
-    padding-right: 5px;
-    padding-top: 5px;
-    /* right: 20px; */
-    width: 30px;
-    height: 30px
+    flex-direction: row;
+    margin-bottom: 25px;
 }
 
 
-.delete-button {
-    background-color: var(--lnude);
-    border: none;
-    /* border: solid var(--coral); */
-    width: 35px;
-    height: 35px;
-    border-radius: 5px;
-    background-color: var(--primary);
+.story h2 {
+    font-family: Caveat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--green);
+    text-align: left;
+    margin-bottom: 20px;
 }
 
-.delete-button img {
-    width: 35px;
-    height: 30px;
-    padding-right: 11px;
-    padding-top: 2px;
+.story {
+    width: 720px;
 }
 
-.save-button {
-    background-image: url('images/tick-corals.png');
-    background-size: cover;
-    width: 35px;
-    height: 35px;
-    border: none;
-    border-radius: 5px;
+.join h2 {
+    font-family: Caveat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--dblue);
+    text-align: left;
+    margin-bottom: 20px;
 }
 
-.cancel-button {
-    background-image: url('images/cross-coral.png');
-    background-size: cover;
-    width: 35px;
-    height: 35px;
-    border: none;
-    border-radius: 5px;
+
+.join {
+    width: 720px;
+    margin-left: 55px;
 }
 
-.list-items {
-    display: flex;
-    justify-content: right;
-    padding-right: 100px;
-    padding-top: 25px;
+
+.img-cont {
+    justify-self: right;
+}
+
+.mainimg {
+    width: 536px;
+    height: 417px;
+    border-radius: 25px;
+    margin-left: 5px;
 }
